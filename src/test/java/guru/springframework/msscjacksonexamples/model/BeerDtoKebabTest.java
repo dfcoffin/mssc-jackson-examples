@@ -7,15 +7,15 @@ import org.springframework.test.context.ActiveProfiles;
 import java.io.IOException;
 
 /**
- * Created by Donald F. Coffin on 07/11/2019 at 19:41
+ * Created by Donald F. Coffin on 07/11/2019 at 19:49
  */
 
-@ActiveProfiles("snake")
+@ActiveProfiles("kebab")
 @JsonTest
-public class BeerDtoSnakeTest extends BaseTest {
+public class BeerDtoKebabTest extends BaseTest {
 
     @Test
-    void testSnake() throws IOException {
+    void testKebab() throws IOException {
         BeerDto dto = getDto();
 
         String json = objectMapper.writeValueAsString(dto);
